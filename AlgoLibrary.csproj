@@ -48,6 +48,8 @@
     <Compile Include="Algorithms\Sorting\QuickSort.cs" />
     <Compile Include="Algorithms\Sorting\RadixSort.cs" />
     <Compile Include="Algorithms\Sorting\SelectionSort.cs" />
+    <Compile Include="Algorithms\Trees\BinarySearchTree.cs" />
+    <Compile Include="Algorithms\Trees\Node.cs" />
     <Compile Include="Interfaces\IGraphAlgo.cs" />
     <Compile Include="Interfaces\IIntSortingAlgo.cs" />
     <Compile Include="Interfaces\ISortingAlgo.cs" />
@@ -58,8 +60,10 @@
   <ItemGroup>
     <Folder Include="Algorithms\Graphs\" />
     <Folder Include="Algorithms\Heaps\" />
-    <Folder Include="Algorithms\Trees\" />
     <Folder Include="Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
