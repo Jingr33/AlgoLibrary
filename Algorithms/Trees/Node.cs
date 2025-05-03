@@ -8,6 +8,7 @@ namespace AlgoLibrary.Algorithms.Trees
         private Node<T> _leftChild;
         private Node<T> _rightChild;
         private Node<T> _parent;
+        private int _height = 1;
 
         public Node(T data)
         {
@@ -59,6 +60,16 @@ namespace AlgoLibrary.Algorithms.Trees
         public Node<T> GetParent()
         {
             return _parent;
+        }
+
+        public void SetHeight(int height)
+        {
+            _height = height;
+        }
+
+        public int GetHeight()
+        {
+            return _height;
         }
     }
 }

@@ -48,6 +48,7 @@
     <Compile Include="Algorithms\Sorting\QuickSort.cs" />
     <Compile Include="Algorithms\Sorting\RadixSort.cs" />
     <Compile Include="Algorithms\Sorting\SelectionSort.cs" />
+    <Compile Include="Algorithms\Trees\AVLTree.cs" />
     <Compile Include="Algorithms\Trees\BinarySearchTree.cs" />
     <Compile Include="Algorithms\Trees\Node.cs" />
     <Compile Include="Interfaces\IGraphAlgo.cs" />

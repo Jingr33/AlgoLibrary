@@ -1,18 +1,18 @@
-﻿
-using AlgoLibrary.Algorithms.Trees;
+﻿using AlgoLibrary.Algorithms.Trees;
 using System;
+using System.Collections.Generic;
 
 namespace AlgoLibrary.Interfaces
 {
-    public interface ITree<T> where T : struct, IComparable<T>
+    public interface ITree<T> where T : IComparable<T>
     {
-        void Create(T[] array);
+        void Create(List<T> array);
         void Insert(T item);
         void Remove(T item);
         T[] Traverse();
-        T? GetMax();
+        bool TryGetMax(out T result);
         T GetMax(Node<T> node);
-        T? GetMin();
+        bool TryGetMin(out T result);
         T GetMin(Node<T> node);
         bool IsEmpty();
         Node<T> GetRootNode();
